@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>GJ-CONTACT</title>
+</head>
+<body>
+    <div id="main">
+        <!-- NAVBAR-->
+        <nav>
+            <div class="navbar">
+                <div class="logo"><h1>GJ</h1></div>
+                <div class="openMenu"><i class="fa fa-bars"></i></div>
+                <ul class="mainMenu">
+                    <li><a href="index.html" class="active">Accueil</a></li>
+                    <li><a href="realisations.html">Réalisations</a></li>
+                    <li><a href="competences.html">Compétences</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <div class="closeMenu"><i class="fa fa-close"></i></div>
+                    <span class="icons">
+                        <i class="fa fa-linkedin-square fa-2x"></i>
+                        <i class="fa fa-twitter-square fa-2x"></i>
+                        <i class="fa fa-facebook-square fa-2x" ></i>
+                        <i class="fa fa-github-square fa-2x"></i>
+                    </span>
+                </ul>
+               
+            </div>
+        </nav>
+        <!-- COVER SECTION-->
+        <section id="cover-section">
+            <h2 id="contact-title">CONTACTEZ-MOI</h2>
+        </section>
+        <section id="infos-contact">
+            <!-- Localisation -->
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="card-info shadow">
+                        <i class="fa fa-home fa-2x icon"></i>
+                        <h3 class="info">Localisation</h3>
+                        <p>Abidjan, Cocody-Blockhauss<br>
+                        non loin de l’hôtel sofitel ivoire
+                        </p>
+                    </div>
+                    <!-- Phone -->
+                    <div class="card-info shadow">
+                        <i class="fa fa-phone fa-2x icon"></i>
+                        <h3 class="info">Téléphone</h3>
+                        <p>+225 0103663050 / 0709162396</p>
+                    </div>
+                    <!-- Adresse Email-->
+                    <div class="card-info shadow">
+                        <i class="fa fa-envelope fa-2x icon"></i>
+                        <h3 class="info">Adresse Email</h3>
+                        <p>jlagoueguy@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FORMS -->
+        <section id="contact-form">
+            <div class="container">
+                <form action="#" method="POST">
+                    <div class="form-container">
+                        <input type="text" name="nom" id="nom" class="form-block" placeholder="Nom & Prénoms">
+                        <input type="email" name="email" id="email" class="form-block" placeholder="Adresse Email">
+                    </div>
+                    <div class="form-container">
+                        <input type="text" class="form-block" name="projet" id="projet" placeholder="Projet">
+                        <input type="tel" class="form-block" name="telephone" id="telephone" placeholder="Numéro de Téléphone">
+                    </div>
+                    <div class="form-container">
+                        <textarea name="message" class="form-block-message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                    </div>
+                    <button type="button" class="btn-contact-me">Envoyez message</button>
+                </form>
+            </div>
+        </section>
+        <!-- TOP -->
+        <a href="#top" onclick="topFunction()" id="scrollTop" title="Aller en haut"><i class="fa fa-chevron-up fa-2x scroll" aria-hidden="true"></i></i></a>
+        <!-- FOOTER -->
+        <footer>
+            <div id="part-one">
+                <h3>Discutons Maintenant !</h3>
+                <hr>
+            </div>
+            <div class="container">
+                <div class="footer-container">
+                    <div class="section-1">
+                        <h2 class="logo-footer">GJ</h2>
+                        <p class="copyright">Copyright @2021 | Conçu par </p>
+                        <span class="author">Goueguy Jean-Louis A.</span>
+                    </div>
+                    <div class="section-2">
+                        <ul>
+                            <li><a href="#">Accueil</a></li>
+                            <li><a href="#">Compétences</a></li>
+                            <li><a href="#">Réalisations</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="section-3">
+                        <ul>
+                            <li><a href="#"> <i class="fa fa-map-marker"></i>Abidjan, Cocody-Blockhauss
+                            <br> non loin de l’hôtel sofitel ivoire</a></li>
+                            <li><a href="#"><i class="fa fa-envelope"></i>jlagoueguy@gmail.com</a></li>
+                            <li><a href="#"><i class="fa fa-phone"></i>+225 0103663050 / 0709162396</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div id="loader-container">
+        <div id="load" class="loader"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href="#top"]', {
+	        speed: 300
+        });
+    </script>
+    <script src="js/loader.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
