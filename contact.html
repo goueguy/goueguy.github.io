@@ -65,15 +65,18 @@
         <!-- FORMS -->
         <section id="contact-form">
             <div class="container">
-                <form action="#" method="POST">
+                <form action="#" method="POST" id="form">
+                    <span class="name-error error-message" style="float:left"></span><span style="float:right" class="email-error error-message"></span>
                     <div class="form-container">
                         <input type="text" name="nom" id="nom" class="form-block" placeholder="Nom & Prénoms">
                         <input type="email" name="email" id="email" class="form-block" placeholder="Adresse Email">
                     </div>
+                    <span class="projet-error error-message" style="float:left"></span><span style="float:right" class="telephone-error error-message"></span>
                     <div class="form-container">
                         <input type="text" class="form-block" name="projet" id="projet" placeholder="Projet">
                         <input type="tel" class="form-block" name="telephone" id="telephone" placeholder="Numéro de Téléphone">
                     </div>
+                    <span class="messageErr error-message" style="float:left"></span>
                     <div class="form-container">
                         <textarea name="message" class="form-block-message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
                     </div>
@@ -125,6 +128,7 @@
 	        speed: 300
         });
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/loader.js"></script>
     <script src="js/script.js"></script>
 </body>

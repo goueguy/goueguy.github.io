@@ -1133,3 +1133,9 @@ footer{
     }
 }
 /*----------------DESKTOP ECRAN LARGE---------------*/
+
+/*------------FORMULAIRE CONTACT-------------*/
+.error-message{
+    color:red;
+    font-weight: bold;
+}

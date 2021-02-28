@@ -73,3 +73,49 @@ function close(){
     mainMenu.style.top = '-100%';
 }
 
+/* VALIDATION CONTACT FORM WITH JQUERY */
+$(document).ready(function(){
+    let buttonContact = document.querySelector(".btn-contact-me");
+    // $(".btn-contact-me").attr("disabled",true);
+    buttonContact.addEventListener("click",validateContact);
+    function validateContact(){
+        let errorName = document.querySelector(".name-error");
+        let errorEmail = document.querySelector(".email-error");
+        let errorProject = document.querySelector(".projet-error");
+        let errorPhone = document.querySelector(".telephone-error");
+        let errorMessage = document.querySelector(".messageErr");
+        let nom = $("#nom").val();
+        let email = $("#email").val();
+        let message = $("#message").val();
+        let projet = $("#projet").val();
+        let telephone = $("#telephone").val();
+        if(nom.length===0 || nom.length < 3){
+            errorName.innerHTML = "Le champ nom complet est requis et doit comporter au moins trois caractères";
+            return false;
+        }else if(email.length===0 || !validateEmail(email)){
+            errorEmail.innerHTML = "Le champ email est requis et doit être au bon format";
+            return false;
+        }else if(projet.length===0 || projet.length < 3){
+            errorProject.innerHTML = "Le champ projet est requis et doit comporter au moins trois caractères";
+            return false;
+        }else if(telephone.length===0 || !validatePhone(telephone)){
+            errorPhone.innerHTML = "Le champ Téléphone est requis et doit être au bon format";
+            return false;
+        }else if(message.length===0 || message.length < 3 || telephone.length < 10){
+            errorMessage.innerHTML = "Le champ message est requis et doit comporter au moins trois caractères";
+            return false;
+        }else{
+            alert("VOTRE MESSAGE A ETE ENVOYE, PATIENTEZ, JE VOUS REPONDRAI SOUS PEU");
+            $("#form")[0].reset();
+        }
+    }
+    
+    function validateEmail(email){
+        let emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+        return emailReg.test(email);
+    }
+    function validatePhone(phone){
+        let phoneReg = /^((\+[1-9]{1,4}[ \-]*)|(\([0-9]{2,3}\)[ \-]*)|([0-9]{2,4})[ \-]*)*?[0-9]{3,4}?[ \-]*[0-9]{3,4}?$/;
+        return phoneReg.test(phone);
+    }
+})
