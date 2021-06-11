@@ -117,7 +117,7 @@ a.active::after{
 }
 a:hover{
     transition: 0.5s;
-    border-bottom: 3px solid black;
+    /* border-bottom: 3px solid black; */
     color:#fff;
 }
 /* PRESENTATION SECTION*/
@@ -245,7 +245,8 @@ a:hover{
 /* LANGAGES ET TECHNOLOGIES */
 #techno{
     background-color: #d8fcea;
-    height:450px;
+    height:auto;
+    padding-bottom:20px;
 }
 .langages-title:before{
     content:"";
