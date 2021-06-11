@@ -609,7 +609,7 @@ footer{
     background-color: #29D882;
     position: absolute;
     right:242px;
-    bottom:-36%;
+    bottom:-46%;
 }
 #experiences-title:before{
     content:"";
@@ -619,7 +619,7 @@ footer{
     background-color: #29D882;
     position: absolute;
     left:242px;
-    bottom:-36%;
+    bottom:-46%;
 }
 .buttons{
     text-align: center;
