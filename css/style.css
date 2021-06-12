@@ -134,9 +134,10 @@ a:hover{
     height:490px;
 }
 #picture{
-    height:395px;
-    width:395px;
-    margin-top:96px;
+    height:355px;
+    width:auto;
+    margin-top:106px;
+    margin-bottom: 34px;
 }
 #vertical-bar{
     transform: translateY(188px);
@@ -883,7 +884,7 @@ footer{
         font-size: 13px;
     }
     #picture{
-        width: 100%;
+        width: auto;
     }
     footer{
         height: auto;
@@ -943,10 +944,10 @@ footer{
         height:auto;
     }
     #techno{
-        height: 650px;
+        height: auto;
     }
     .langages-container{
-       grid-template-columns: auto;
+        grid-template-columns: auto;
     }
     .footer{
         height: auto;
@@ -1132,6 +1133,13 @@ footer{
         right:calc(10% - 34px);
         width:calc(18% - 34px);
     }
+}
+.rounded{
+    border-radius: 50%;
+    border:1px solid #6FD983;
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding: 4px;
 }
 /*----------------DESKTOP ECRAN LARGE---------------*/
 
