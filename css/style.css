@@ -2,6 +2,7 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 body{
     font-family: 'Roboto', sans-serif;
@@ -471,7 +472,7 @@ footer{
 }
 .card-projects{
     width:100%;
-    height:420px;
+    height:auto;
     box-shadow: 0 .5em 1rem rgba(0,0,0, .15);
 }
 .card-projects .content{
@@ -482,7 +483,8 @@ footer{
 }
 .real-picture{
     height:100%;
-    width:100%;
+    width:50%;
+    padding:10px;
 }
 .picture-fond{
     background-color: #E6E6E6;
@@ -556,8 +558,10 @@ footer{
     margin-top: 110px;
 }
 #skills-section{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    width:100%;
 }
 #skills-title{
     text-align: right;
@@ -602,7 +606,7 @@ footer{
     text-align: center;
     margin-bottom: 50px;
 }
-#experiences-title::after{
+/* #experiences-title::after{
     content:"";
     display: block;
     width: 120px;
@@ -621,7 +625,7 @@ footer{
     position: absolute;
     left:242px;
     bottom:-46%;
-}
+} */
 .buttons{
     text-align: center;
     margin-bottom: 100px;
@@ -894,8 +898,9 @@ footer{
         grid-gap:30px 20px;
     }
     #skills-section{
-        grid-template-columns: 1fr;
-        grid-gap:10px 20px;
+        /* grid-template-columns: 1fr;
+        grid-gap:10px 50px; */
+        transform: translate(2%, -30%);
     }
     .skills{
         height:auto;
@@ -990,6 +995,10 @@ footer{
 }
 /*---------------TABLET----------------------------*/
 @media screen and (min-width:200px) and (max-width:342px){
+    #experiences{
+        flex-direction: column;
+        width:100px;
+    }
     .grid-container{
         grid-gap:20px;
         grid-template-columns: 1fr;
@@ -999,6 +1008,9 @@ footer{
     }
     #techno{
         height: 700px;
+    }
+    .experiences-area {
+        width: 267px;
     }
 }
 @media screen and (min-width:768px) and (max-width:991px){
