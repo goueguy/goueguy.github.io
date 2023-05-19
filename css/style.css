@@ -489,6 +489,7 @@ footer{
 .picture-fond{
     background-color: #E6E6E6;
     height:150px;
+    text-align: center;
 }
 .paragraph{
     text-align: justify;
